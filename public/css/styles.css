@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+:root {
+    --primary-bg-color: #eeeeee;
+    --primary-color: #2196f3;
+    --primary-text-color: #212121;
+    --seconday-color: #fafafa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;    
+}
+
+input[type=submit] {
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
+    font-size: 25px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.todo-form {
+    background-color: var(--seconday-color);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        'header'
+        'side'
+        'content'
+        'footer';
+}
+
+.main-head, .content, .side,
+.content, .main-footer {
+    padding: 10px;
+}
+
+.main-head {
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    background-color: var(--seconday-color);    
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+}
+
+.content {
+    grid-area: content;
+}
+
+#todos-list {
+    list-style-type: none;    
+}
+
+#todos-list li {
+    margin: 10px 0px;
+    background-color: var(--seconday-color);
+    padding: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+}
+
+.btn-close {
+    background-color: #e57373;
+    float: right;
+    padding: 3px;
+    border: none;
+    color: var(--seconday-color);
+    cursor: pointer;
+}
+
+.side {
+    grid-area: side;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+/* Media queries */
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+            'header header'
+            'side content'
+            'footer footer';
+    }
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-areas: 
+            'header header header'
+            'side content content'
+            'footer footer footer';
+    }    
+}
