@@ -10,6 +10,12 @@ it is the client part and complement the Web API part.
 * Javascript
 * Express JS
 
+### Resources implemented from the training table
+* HTML & CSS | HTML5 Fundamentals
+* HTML & CSS | HTML, CSS, and JavaScript: The Big Picture
+* HTML & CSS | CSS Grid
+* HTML & CSS | Flexbox (introduction)
+
 ### Instructions
 1. Clone or downoload
 2. Install the dependencies
