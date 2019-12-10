@@ -15,6 +15,8 @@ it is the client part and complement the Web API part.
 * HTML & CSS | HTML, CSS, and JavaScript: The Big Picture
 * HTML & CSS | CSS Grid
 * HTML & CSS | Flexbox (introduction)
+* Javascript & jQuery | Javascript Fundamentals
+* Javascript & jQuery | Basics of Programming with JavaScript
 
 ### Instructions
 1. Clone or downoload
